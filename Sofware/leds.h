@@ -12,7 +12,7 @@
 #define P_B 0
 #define P_D 1
 #define P_C 2
-#define N_LEDS 	  2
+#define N_LEDS 	  64			//setar numero de leds na placa
 #define N_COLUNAS 3
 
 /*
