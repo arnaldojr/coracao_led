@@ -1,9 +1,16 @@
+/* Nome: main.c
+ * Projeto: Coração LED
+ * Autor: Arnaldo Jr
+ * Data de Criação: 26/07/2014
+ */
+
 #include <p18f452.h>
 #include <delays.h>
 #include <stdlib.h>
 #include "leds.h"
 
 #pragma config WDT = OFF, LVP = OFF, OSC = XT, PWRT = ON, BOR = ON, BORV = 42
+
 //PROTOTIPO DE FUNÇOES
 
 
