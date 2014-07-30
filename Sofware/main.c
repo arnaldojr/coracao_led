@@ -27,18 +27,19 @@ void main()
 
 	while(1)
 	{
-		int i;
-		for (i=0;i<N_LEDS;i++)		/*giro no sentido anti-horario acende um por vez*/
+/*		int i;
+		for (i=0;i<N_LEDS;i++)	//giro no sentido anti-horario acende um por vez
 		{
 			acender_led(i,vled);
-			Delay1KTCYx(250);		// 250ms
+			Delay10KTCYx(250);		// 250ms
 		}
 		
-		for (i=N_LEDS;i=0;i--)		/*giro no sentido horario acende um por vez*/
-		{
+		for (i=N_LEDS;i=0;i--)		//giro no sentido horario acende um por vez
+			{
 			acender_led(i,vled);
 			Delay1KTCYx(250);		// 250ms
 		}		
+*/
 		
 /*		Delay1KTCYx(250);	//Delay  250 * 1000 * 1 = 250000 µs  = 0,25s = 250ms @ 4MHz
 		if(PORTB==0b10000000)
@@ -52,5 +53,54 @@ void main()
 		PORTD = 0b00000001;
 			
 */	
+
+PORTB=0b10000000;
+PORTD=0b00000000;
+PORTC=0b00000100;
+Delay10KTCYx(250);
+PORTB=0b00010000;
+PORTD=0b00000000;
+PORTC=0b00000100;
+Delay10KTCYx(250);
+PORTB=0b00010000;
+PORTC=0b00000000;
+PORTD=0b00000001;
+Delay10KTCYx(250);
+PORTD=0b00000010;
+Delay10KTCYx(250);
+PORTD=0b00000100;
+Delay10KTCYx(250);
+PORTD=0b00001000;
+Delay10KTCYx(250);
+PORTD=0b00010000;
+Delay10KTCYx(250);
+PORTD=0b00100000;
+Delay10KTCYx(250);
+PORTD=0b01000000;
+Delay10KTCYx(250);
+PORTD=0b10000000;
+Delay10KTCYx(250);
+PORTB=0b00000001;
+PORTD=0b00001000;
+PORTC=0b00000000;
+Delay10KTCYx(250);
+PORTD=0b00010000;
+Delay10KTCYx(250);
+PORTD=0b00000001;
+Delay10KTCYx(250);
+PORTD=0b01000000;
+Delay10KTCYx(250);
+PORTD=0b00000100;
+Delay10KTCYx(250);
+PORTD=0b00000000;
+PORTC=0b00000100;
+Delay10KTCYx(250);
+PORTC=0b00000000;
+PORTD=0b00100000;
+Delay10KTCYx(250);
+PORTD=0b00000001;
+Delay10KTCYx(250);
+PORTD=0b10000000;
+				
 	}
 }
